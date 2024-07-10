@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>First Alert Weather Application</title>
-  </head>
-  <body>
-    <div class="weather-app">
-      <header>
-        <form class="search-form" id="searchForm">
-          <input type="search" placeholder="Enter a city..." required class="search-form-input" id="searchFormInput">
-          <input type="submit" value="Search" class="search-form-button"/>
-        </form>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>First Alert Weather Application</title>
+</head>
+<body>
+  <div class="weather-app">
+    <header>
+      <form class="search-form" id="searchForm">
+        <input type="search" placeholder="Enter a city..." required/ class="search-form-input" id="searchFormInput">
+        <input type="submit" value="Search" class="search-form-button"/>
+      </form>
+    </header>
 
-      <main>
-        <div class="weather-app-data">
-            <div>
-              <h1 class="weather-app-city" id="city"></h1>
-              <p class="weather-app-details">
-                <span id="time"></span>,
-                <span id="weatherDescription"></span>
-                <br />
-                Humidity: <strong id="humidity"></strong>, Wind: few clouds
-                <strong id="windSpeed"></strong>
-              </p>
-            </div>
-
-            <div class="weather-app-current-temp">
-                <span class="weather-app-current-temp-icon" id="icon">☀️</span>
-                <span class="weather-app-current-temp-value" id="temp"></span>
-                <span class="weather-app-current-temp-unit">°F</span>
-            </div>
-        </div>
-         
-        <div class="weather-app-forecast" id="forecast">
-
+    <main>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city" id="city"></h1>
+          <p class="weather-app-details">
+            <span id="time"></span>,
+            <span id="weatherDescription"></span>
+            <br />
+            Humidity: <strong id="humidity"></strong>, Wind: 
+            <strong id="windSpeed"></strong>
+          </p>
         </div>
 
-      </main>
+        <div class="weather-app-current-temp">
+          <span class="weather-app-current-temp-icon" id="icon">☀️</span>
+          <span class="weather-app-current-temp-value" id="temp"></span>
+          <span class="weather-app-current-temp-unit">°F</span>
+        </div>
+      </div>
+      
+      <div class="weather-app-forecast" id="forecast">
 
-      <footer>
-        <p>
-          This project was coded by 
-          <a href="https://www.linkedin.com/in/alina-miroshkina-54b58a23b/?originalSubdomain=de">Alina Miroshkina</a> and is on 
-          <a href="https://github.com/Alina-Miroshkina">GitHub</a> and hosted on 
-          <a href="https://first-alert-weather.netlify.app">Netlify</a>.
-        </p>
-      </footer>
-    </div>
-    <script src="./script.js"></script>
-  </body>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>
+        This project was coded by 
+        <a href="https://www.linkedin.com/in/alina-miroshkina-54b58a23b/?originalSubdomain=de">Alina Miroshkina</a> and is on 
+        <a href="https://github.com/Alina-Miroshkina">GitHub</a> and hosted on 
+        <a href="https://first-alert-weather.netlify.app">Netlify</a>. 
+      </p>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
 </html>
